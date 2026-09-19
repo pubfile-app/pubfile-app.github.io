@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>.pub to IDML and PDF converter for Mac | PubFile</title>
+<meta name="description" content="Convert Publisher .pub files to editable IDML (Affinity, InDesign) and PDF on your Mac. Batch a whole folder, get a per-file fidelity report, and try it free on one of your own files first.">
+<link rel="canonical" href="https://pubfile-app.github.io/pub-to-idml-pdf-converter-mac/">
+<meta name="theme-color" content="#fbfbfd">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PubFile">
+<meta property="og:title" content=".pub to IDML / PDF converter for Mac">
+<meta property="og:description" content="Convert Publisher .pub files to editable IDML (Affinity, InDesign) and PDF on your Mac. Batch a whole folder, get a per-file fidelity report, and try it free on one of your own files first.">
+<meta property="og:url" content="https://pubfile-app.github.io/pub-to-idml-pdf-converter-mac/">
+<meta property="og:image" content="https://pubfile-app.github.io/og/pub-to-idml-pdf-converter-mac.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content=".pub to IDML / PDF converter for Mac">
+<meta name="twitter:description" content="Convert Publisher .pub files to editable IDML (Affinity, InDesign) and PDF on your Mac. Batch a whole folder, get a per-file fidelity report, and try it free on one of your own files first.">
+<meta name="twitter:image" content="https://pubfile-app.github.io/og/pub-to-idml-pdf-converter-mac.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-pub-to-idml-pdf-converter-mac">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/" aria-label="PubFile home">
+      <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="14" fill="#0066cc"/><path d="M20 14h16l10 10v26H20z" fill="#fff"/><path d="M36 14v10h10" fill="#cfe0fb"/><rect x="25" y="30" width="16" height="2.6" rx="1.3" fill="#0066cc"/><rect x="25" y="36" width="16" height="2.6" rx="1.3" fill="#0066cc"/><rect x="25" y="42" width="10" height="2.6" rx="1.3" fill="#0066cc"/></svg>
+      <span>PubFile</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="/pub-to-idml-pdf-converter-mac/" aria-current="page">The app</a>
+      <a href="/open-pub-files-on-mac/">Open .pub on Mac</a>
+      <a href="/publisher-end-of-life-2026/">Publisher retiring</a>
+      <a href="/publisher-alternatives-churches-schools/">Churches &amp; schools</a>
+    </nav>
+<a class="pill pill-sm" href="/#interest">Get notified</a>  </div>
+</header>
+
+<main id="main">
+<article class="article">
+  <header>
+    <p class="t-caption">macOS 13+ · Apple silicon and Intel</p>
+    <h1 class="t-headline">.pub to IDML and PDF converter for Mac</h1>
+    <p class="lede t-sub">PubFile opens Microsoft Publisher files on your Mac and gives you back editable IDML documents, PDFs, and a plain-language report on each one. It runs entirely on your Mac. The free version converts three files at full quality, so you can judge the result on your own documents before spending anything.</p>
+  </header>
+  <div class="prose">
+
+  <div class="cta-row">
+<a class="pill" href="#interest">Get notified</a>
+<span class="t-caption">1.0 is in App Review; Mac App Store, October 2026.</span>  </div>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Open a .pub file</strong>: File ▸ Open…, drag it onto the window, or double-click it in Finder. Open several at once; each gets a tab.</li>
+    <li><strong>See every page</strong> rendered. View ▸ Show Page Thumbnails (⌥⌘T) adds a sidebar. In Finder, press Space for a Quick Look preview without opening the app.</li>
+    <li><strong>Read the report</strong> in the inspector (⌥⌘I): fonts used and which were substituted, how much of each story was placed on each page, and any object that could not be converted, shown next to the page. The preview is the conversion.</li>
+    <li><strong>Export:</strong> File ▸ Export as PDF… (⌘E) or Export as IDML… (⇧⌘E). With Pro, File ▸ Convert All Open Documents… (⌘B) writes an .idml, a .pdf and a report for every open file into one folder.</li>
+    <li><strong>Open the IDML</strong> in Affinity (free), Affinity Publisher 2 or InDesign and keep editing.</li>
+  </ol>
+
+  <h2 id="multipage">Multi-page documents: the part everything else gets wrong</h2>
+  <p>Publisher newsletters usually use <em>linked text boxes</em>: one long story that flows from a box on page 1 into a box on page 3, and so on. The open-source parser that LibreOffice and the existing Mac .pub apps rely on (libmspub) has never implemented that link. Instead it puts the entire story into every linked box, so page 1, page 2 and page 3 each show the whole article, and the last page comes out empty. The bug has been open in LibreOffice's tracker since 2013 (<a href="https://bugs.documentfoundation.org/show_bug.cgi?id=67299" rel="noopener">bug 67299</a>), and it is the most common one-star complaint on the incumbent Mac app.</p>
+  <p>PubFile is built on the same open-source parser, with that link implemented: the story is split across the boxes the way Publisher laid it out, and linked boxes stay linked in the IDML. The parser changes are published under the same licence.</p>
+  <p>Our acceptance test was the exact 4-page document attached to that 2013 bug report. It is the file in the screenshot on the home page: the story flows from page 1 to page 4 with no duplication, and the report lists what did not survive.</p>
+
+  <h2>What comes out</h2>
+  <h3>IDML (InDesign Markup Language)</h3>
+  <p>A documented, zipped-XML page-layout format. Pages, text frames with live text and paragraph and character formatting, linked text boxes reconnected, pictures extracted at original resolution into a Links folder, shapes, colours and tab stops. Opens in:</p>
+  <ul>
+    <li><a href="https://www.affinity.studio/" rel="noopener">Affinity</a> (2025 release, free) and Affinity Publisher 2 / 1.8+, <a href="https://support.serif.com/hc/en-us/articles/10259217288463" rel="noopener">confirmed by Affinity</a>.</li>
+    <li>Adobe InDesign CS4 and later.</li>
+  </ul>
+  <p>Affinity's own note on IDML import applies: page structure, text frames and basic styles are preserved, "some advanced formatting, like GREP styles, anchored objects, and tables, may require manual adjustment." In 1.0, tables render in the preview and PDF but are not written to the IDML; the report says so when a file has them.</p>
+  <h3>PDF</h3>
+  <p>One PDF per file, vector text (searchable, selectable), images embedded at original resolution, page size as set in the document.</p>
+  <h3>Fidelity report</h3>
+  <p>Shown in the inspector for every file you open, and saved as <code>&lt;name&gt;.report.txt</code> and <code>.json</code> next to Pro exports. It is not a font inventory dressed up as a report; it is a check. It lists:</p>
+  <ul>
+    <li>Pages detected and pages written.</li>
+    <li>For each story and page, how many characters were placed and any text that did not fit.</li>
+    <li>Fonts referenced, which are installed on your Mac, and what was substituted.</li>
+    <li>Objects the converter could not handle (WMF/EMF clip art, tables in IDML, embedded OLE objects, certain WordArt warps and 3-D or shadow effects).</li>
+    <li>A single verdict per file: <em>clean</em>, <em>check</em>, or <em>problems</em>, with plain-English notes.</li>
+  </ul>
+
+  <h2>Supported files</h2>
+  <ul>
+    <li>Publisher 98, 2000, 2002, 2003, 2007, 2010, 2013, 2016, 2019, 2021 and Microsoft 365 (.pub).</li>
+    <li>Publisher 97 and earlier: not supported, the format is different and no open parser exists for it. If you have these, export them from a working Publisher while you can.</li>
+    <li>Password-protected files: not supported.</li>
+  </ul>
+
+  <h2>Free vs paid</h2>
+  <div class="plans" style="max-width:none">
+    <div class="plan">
+      <h3>Free</h3>
+      <p class="price">$0</p><p class="plan-note">Viewer, Quick Look and report, always free.</p>
+      <ul>
+        <li>Open and preview any number of .pub files</li>
+        <li>Quick Look and Finder thumbnails</li>
+        <li>Convert <strong>three</strong> files to IDML or PDF at full quality, no watermark</li>
+      </ul>
+    </div>
+    <div class="plan featured">
+      <h3>PubFile Pro</h3>
+      <p class="price">$29.99<small>one time</small></p><p class="plan-note">One in-app purchase. No subscription.</p>
+      <ul>
+        <li>Unlimited IDML and PDF export</li>
+        <li>Convert All Open Documents: IDML, PDF and report for each file, into one folder</li>
+        <li>Report file saved next to every export</li>
+        <li>Restores on any Mac with the same Apple Account</li>
+      </ul>
+    </div>
+  </div>
+  <p>The free conversions are unrestricted: pick your ugliest, longest files. If the report says "problems" and the result is not worth $29.99 to you, do not buy. PubFile Pro is a one-time in-app purchase on the Mac App Store; there is no direct-download version.</p>
+
+  <h2>What PubFile is not</h2>
+  <ul>
+    <li>It is not Publisher for Mac. You cannot edit .pub files in it, and it does not save .pub files. It gets your content out into formats that have a future.</li>
+    <li>It is not a cloud service. There is no upload, no account, no analytics, and it works offline. <a class="link-arrow" href="/privacy/">Privacy</a></li>
+    <li>It is not perfect. Publisher has thirty years of features; some (WMF clip art, tables in IDML, embedded OLE objects, certain WordArt effects) will not convert cleanly in 1.0. The report will tell you which ones, on which page.</li>
+  </ul>
+
+  <h2>Requirements</h2>
+  <p>macOS 13 Ventura or later. Apple silicon (M1 and later) and Intel Macs. About 60 MB of disk. No internet connection needed after installation.</p>
+
+  <p class="legal">Microsoft Publisher is a trademark of Microsoft Corporation; PubFile is not affiliated with Microsoft. PubFile uses the libmspub library from the LibreOffice project (Mozilla Public License 2.0); our modifications are published under the same licence.</p>
+  </div>
+</article>
+</main>
+
+<section class="band interest-band" id="interest">
+  <div class="wrap-narrow">
+    <h2 class="t-title">Tell us about your files.</h2>
+    <p class="t-sub">One email when 1.0 is approved. Nothing else.</p>
+<form class="interest" id="interest-form"
+action="mailto:mrr.rajat.contact@gmail.com" method="post" enctype="text/plain" data-mailto="mrr.rajat.contact@gmail.com">
+  <input type="hidden" name="_subject" value="PubFile interest: pub-to-idml-pdf-converter-mac">
+  <input type="hidden" name="page" value="/pub-to-idml-pdf-converter-mac/">
+  <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <div class="field">
+    <label for="f-email">Email</label>
+    <input id="f-email" type="email" name="email" required autocomplete="email" placeholder="you@parish.org">
+  </div>
+
+  <fieldset class="field">
+    <legend>Roughly how many .pub files?</legend>
+    <div class="seg" role="radiogroup">
+      <label><input type="radio" name="files" value="1-10"><span>1 to 10</span></label>
+      <label><input type="radio" name="files" value="10-100" checked><span>10 to 100</span></label>
+      <label><input type="radio" name="files" value="100-1000"><span>100 to 1,000</span></label>
+      <label><input type="radio" name="files" value="1000+"><span>More</span></label>
+    </div>
+  </fieldset>
+
+  <fieldset class="field">
+    <legend>What do you need most?</legend>
+    <div class="checks">
+      <label><input type="checkbox" name="need" value="pdf"><span>PDF copies to keep</span></label>
+      <label><input type="checkbox" name="need" value="editable" checked><span>Editable files (Affinity or InDesign)</span></label>
+      <label><input type="checkbox" name="need" value="multipage"><span>Multi-page newsletters that come out right</span></label>
+      <label><input type="checkbox" name="need" value="batch"><span>Batch a whole folder</span></label>
+    </div>
+  </fieldset>
+
+  <div class="field">
+    <label for="f-note">Anything else <span class="t-caption">(optional)</span></label>
+    <textarea id="f-note" name="note" rows="3" placeholder="Publisher version, the kind of documents, a deadline..."></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="pill">Send</button>
+    <p class="t-caption form-help">
+Opens your mail app with the answers filled in, addressed to <a href="mailto:mrr.rajat.contact@gmail.com">mrr.rajat.contact@gmail.com</a>.      Unsubscribe by replying "stop".
+    </p>
+  </div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">PubFile</p>
+        <p class="t-caption">Open and convert .pub files on your Mac. macOS 13 or later, Apple silicon and Intel.</p>
+<p class="t-caption">Questions: <a href="mailto:mrr.rajat.contact@gmail.com">mrr.rajat.contact@gmail.com</a></p>      </div>
+      <nav aria-label="Footer">
+        <a href="/pub-to-idml-pdf-converter-mac/">The app</a>
+        <a href="/open-pub-files-on-mac/">How to open .pub on a Mac</a>
+        <a href="/publisher-end-of-life-2026/">Publisher end of life</a>
+        <a href="/publisher-alternatives-churches-schools/">Churches and schools</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/refunds/">Refunds</a>
+      </nav>
+    </div>
+    <p class="t-legal">Microsoft Publisher is a trademark of Microsoft Corporation. PubFile is an independent product and is not affiliated with, endorsed by, or sponsored by Microsoft. Affinity is a trademark of Canva. InDesign is a trademark of Adobe. Product names are used only to describe compatibility. Sources for factual claims are linked inline. Updated 2026-09-19.</p>
+  </div>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>

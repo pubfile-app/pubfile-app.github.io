@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>PubFile guides</title>
+  <link href="https://pubfile-app.github.io/"/>
+  <link rel="self" href="https://pubfile-app.github.io/feed.xml"/>
+  <id>https://pubfile-app.github.io/</id>
+  <updated>2026-09-20T00:00:00Z</updated>
+  <author><name>PubFile</name></author>
+  <entry>
+    <title>Publisher retires October 2026: what happens to your .pub files</title>
+    <link href="https://pubfile-app.github.io/publisher-end-of-life-2026/"/>
+    <id>https://pubfile-app.github.io/publisher-end-of-life-2026/</id>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <summary>Publisher leaves Microsoft 365 on 1 October 2026. The exact dates, what Microsoft recommends, and every option for opening and converting .pub files afterwards, including on a Mac.</summary>
+  </entry>
+  <entry>
+    <title>How to open .pub files on a Mac (2026)</title>
+    <link href="https://pubfile-app.github.io/open-pub-files-on-mac/"/>
+    <id>https://pubfile-app.github.io/open-pub-files-on-mac/</id>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <summary>Every way to open a Microsoft Publisher .pub file on a Mac in 2026: PubFile, LibreOffice, PubHarbor, PUB Reader, Markzware and online converters, with prices and what each gets wrong.</summary>
+  </entry>
+  <entry>
+    <title>Publisher alternatives for churches and schools</title>
+    <link href="https://pubfile-app.github.io/publisher-alternatives-churches-schools/"/>
+    <id>https://pubfile-app.github.io/publisher-alternatives-churches-schools/</id>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <summary>Publisher goes away in October 2026. A plan for church offices and schools: which free tool to move to, and how to rescue years of bulletins and newsletters as editable files.</summary>
+  </entry>
+</feed>

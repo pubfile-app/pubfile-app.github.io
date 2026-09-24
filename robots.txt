@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+Sitemap: https://pubfile-app.github.io/sitemap.xml
